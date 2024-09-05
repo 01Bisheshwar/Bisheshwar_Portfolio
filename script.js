@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function() {
             loadingText.textContent = progress + '%';
         }
 
-        if (itemsLoaded >= totalItems * 0.6 && !thresholdReached) {  // 60% threshold
+        if (itemsLoaded >= totalItems * 0.8 && !thresholdReached) {  // 80% threshold
             thresholdReached = true;
-            // Show content once 60% of items are loaded
+            // Show content once 80% of items are loaded
             contentWrapper.style.display = 'block';
             loadingOverlay.style.display = 'none';
         }
